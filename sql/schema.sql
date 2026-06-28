@@ -1,0 +1,13 @@
+-- ============================================================
+-- Customer Intelligence Platform — Database Schema
+-- ============================================================
+
+-- TODO:
+-- 1. Create customers table (customer_id, name, email, demographics, signup_date).
+-- 2. Create products table (product_id, product_name, category, unit_price).
+-- 3. Create transactions table (transaction_id, customer_id, date, amount, channel).
+-- 4. Create transaction_items table (item_id, transaction_id, product_id, quantity, price).
+-- 5. Create customer_segments table (segment_id, customer_id, segment_name, rfm_score).
+-- 6. Create churn_predictions table (prediction_id, customer_id, probability, label, model_version).
+-- 7. Create clv_predictions table (prediction_id, customer_id, predicted_clv, time_horizon).
+-- 8. Add indexes on foreign keys and frequently queried columns.

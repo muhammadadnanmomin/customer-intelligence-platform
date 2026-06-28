@@ -1,0 +1,12 @@
+-- ============================================================
+-- Customer Intelligence Platform — Business Queries
+-- ============================================================
+
+-- TODO:
+-- 1. Monthly revenue trend query.
+-- 2. RFM scores (Recency, Frequency, Monetary) query.
+-- 3. Top N customers by revenue query.
+-- 4. Customer cohort analysis (by signup month) query.
+-- 5. Product category performance query.
+-- 6. Churn risk summary query.
+-- 7. Customer lifetime value distribution query.

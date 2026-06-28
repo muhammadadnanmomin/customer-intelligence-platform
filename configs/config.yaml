@@ -1,0 +1,13 @@
+# ============================================================
+# Customer Intelligence Platform — Application Configuration
+# ============================================================
+
+# TODO:
+# 1. Define project metadata (name, version, environment).
+# 2. Add database connection settings.
+# 3. Configure data directory paths (raw, interim, processed, external).
+# 4. Configure model artifact paths (churn, clv, segmentation).
+# 5. Add feature engineering parameters (RFM bins, observation windows).
+# 6. Add model training parameters (test_size, random_state, CV folds).
+# 7. Add Streamlit configuration (page_title, layout).
+# 8. Add reporting output paths.

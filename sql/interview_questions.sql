@@ -1,0 +1,11 @@
+-- ============================================================
+-- Customer Intelligence Platform — SQL Interview Questions
+-- ============================================================
+
+-- TODO:
+-- 1. First-purchase-to-second-purchase within N days query (CTEs).
+-- 2. Running total of revenue per customer (window functions).
+-- 3. Rank products by revenue within each category (RANK/PARTITION).
+-- 4. Month-over-month revenue growth rate (LAG).
+-- 5. Customers with above-average order value (subquery + HAVING).
+-- 6. Top N co-purchased product pairs (self-join / market basket).

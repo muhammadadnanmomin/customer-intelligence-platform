@@ -1,0 +1,50 @@
+# ============================================================
+# Customer Intelligence Platform — Docker Compose
+# ============================================================
+
+version: "3.9"
+
+services:
+  # ---------- Streamlit Dashboard ----------
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cip-app
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./logs:/app/logs
+      - ./configs:/app/configs
+    env_file:
+      - .env
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # ---------- PostgreSQL Database ----------
+  db:
+    image: postgres:16-alpine
+    container_name: cip-db
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-customer_intelligence}
+      POSTGRES_USER: ${POSTGRES_USER:-cip_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-cip_password}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./sql/schema.sql:/docker-entrypoint-initdb.d/01_schema.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-cip_user}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+    driver: local

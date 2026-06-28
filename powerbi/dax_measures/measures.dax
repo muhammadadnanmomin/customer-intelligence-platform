@@ -1,0 +1,17 @@
+// ============================================================
+// Customer Intelligence Platform — DAX Measures
+// ============================================================
+
+// TODO:
+// 1. Define Total Revenue measure.
+// 2. Define Average Order Value measure.
+// 3. Define Revenue YTD measure.
+// 4. Define Revenue MoM Growth measure.
+// 5. Define Total Customers measure.
+// 6. Define New Customers measure.
+// 7. Define Active Customers measure.
+// 8. Define Customer Retention Rate measure.
+// 9. Define Churn Rate measure.
+// 10. Define High Risk Customers measure.
+// 11. Define Average CLV measure.
+// 12. Define Total Predicted Revenue measure.

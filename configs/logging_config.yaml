@@ -1,0 +1,9 @@
+# ============================================================
+# Customer Intelligence Platform — Logging Configuration
+# ============================================================
+
+# TODO:
+# 1. Define formatters (standard, detailed).
+# 2. Configure handlers (console, rotating file, error file).
+# 3. Set up module-level loggers (ingestion, preprocessing, features, models, pipelines).
+# 4. Configure root logger with appropriate level and handlers.
